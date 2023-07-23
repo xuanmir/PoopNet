@@ -11,7 +11,7 @@ let waitingForPickup = "💩"
 let inTransit = "🚚"
 let arrivedAtLab = "⏳"
 let sequencing = "🧬"
-let analysisReady = "🎉"
+let analysisOnline = "🎉"
 
 //enum sampleState {
 //    case WaitingForPickup, InTransit, ArrivedAtLab, Sequencing, AnalysisReady
@@ -67,7 +67,7 @@ struct ContentView: View {
                 }
 
                 HStack {
-                    Text("\(analysisReady)")
+                    Text("\(analysisOnline)")
                         .font(.system(size: 36))
                         .frame(width: 60, height: 60)
                         .background(.quaternary)
