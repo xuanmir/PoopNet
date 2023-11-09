@@ -1,0 +1,76 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="1024" height="1024" fill="#FFD1BD"/>
+<path d="M688 656H336V672H688V656Z" fill="#552E05"/>
+<path d="M688 656H336V672H688V656Z" fill="#552E05"/>
+<path d="M672 672H336V688H672V672Z" fill="#552E05"/>
+<path d="M672 688H368V704H672V688Z" fill="#552E05"/>
+<path d="M528 640H304V656H528V640Z" fill="#552E05"/>
+<path d="M416 560H352V576H416V560Z" fill="#552E05"/>
+<path d="M560 624H304V640H560V624Z" fill="#6E3206"/>
+<path d="M592 608H304V624H592V608Z" fill="#6E3206"/>
+<path d="M624 592H336V608H624V592Z" fill="#6E3206"/>
+<path d="M704 576H352V592H704V576Z" fill="#6E3206"/>
+<path d="M528 512H352V528H528V512Z" fill="#6E3206"/>
+<path d="M560 496H352V512H560V496Z" fill="#6E3206"/>
+<path d="M656 480H448V496H656V480Z" fill="#6E3206"/>
+<path d="M640 464H480V480H640V464Z" fill="#6E3206"/>
+<path d="M624 448H512V464H624V448Z" fill="#6E3206"/>
+<path d="M576 400H464V416H576V400Z" fill="#6E3206"/>
+<path d="M544 384H464V400H544V384Z" fill="#6E3206"/>
+<path d="M528 368H480V384H528V368Z" fill="#6E3206"/>
+<path d="M528 352H496V368H528V352Z" fill="#6E3206"/>
+<path d="M544 336H512V352H544V336Z" fill="#6E3206"/>
+<path d="M560 320H528V336H560V320Z" fill="#6E3206"/>
+<path d="M592 432H528V448H592V432Z" fill="#6E3206"/>
+<path d="M704 560H416V576H704V560Z" fill="#6E3206"/>
+<path d="M704 544H448V560H704V544Z" fill="#6E3206"/>
+<path d="M672 528H448V544H672V528Z" fill="#6E3206"/>
+<path d="M480 528H336V544H480V528Z" fill="#6E3206"/>
+<path d="M448 512H336V528H448V512Z" fill="#6E3206"/>
+<path d="M720 640H528V656H720V640Z" fill="#6D3C21"/>
+<path d="M624 640H528V656H624V640Z" fill="#9F4B27"/>
+<path d="M560 656H464V672H560V656Z" fill="#9F4B27"/>
+<path d="M496 672H416V688H496V672Z" fill="#9F4B27"/>
+<path d="M432 688H368V704H432V688Z" fill="#9F4B27"/>
+<path d="M672 624H560V640H672V624Z" fill="#9F4B27"/>
+<path d="M576 544H464V560H576V544Z" fill="#9F4B27"/>
+<path d="M560 320H528V336H560V320Z" fill="#9F4B27"/>
+<path d="M512 384H464V400H512V384Z" fill="#9F4B27"/>
+<path d="M512 448H448V464H512V448Z" fill="#9F4B27"/>
+<path d="M528 560H416V576H528V560Z" fill="#9F4B27"/>
+<path d="M480 464H416V480H480V464Z" fill="#9F4B27"/>
+<path d="M704 608H592V624H704V608Z" fill="#9F4B27"/>
+<path d="M688 592H624V608H688V592Z" fill="#9F4B27"/>
+<path d="M720 640H624V656H720V640Z" fill="#552E05"/>
+<path d="M704 576H624V592H704V576Z" fill="#552E05"/>
+<path d="M720 624H672V640H720V624Z" fill="#552E05"/>
+<path d="M720 608H688V624H720V608Z" fill="#552E05"/>
+<path d="M704 544H672V560H704V544Z" fill="#552E05"/>
+<path d="M704 560H656V576H704V560Z" fill="#552E05"/>
+<path d="M464 544H336V560H464V544Z" fill="#552E05"/>
+<path d="M416 464H400V480H416V464Z" fill="#552E05"/>
+<path d="M560 528H432V544H560V528Z" fill="#552E05"/>
+<path d="M656 512H528V528H656V512Z" fill="#552E05"/>
+<path d="M464 448H400V464H464V448Z" fill="#552E05"/>
+<path d="M528 432H432V448H528V432Z" fill="#552E05"/>
+<path d="M592 416H480V432H592V416Z" fill="#552E05"/>
+<path d="M512 368H480V384H512V368Z" fill="#552E05"/>
+<path d="M672 496H560V512H672V496Z" fill="#552E05"/>
+<path d="M672 480H560V496H672V480Z" fill="#552E05"/>
+<path d="M464 576H352V592H464V576Z" fill="#9F4B27"/>
+<path d="M448 480H384V496H448V480Z" fill="#9F4B27"/>
+<path d="M640 496H480V512H640V496Z" fill="#6E3206"/>
+<path d="M640 480H480V496H640V480Z" fill="#6E3206"/>
+<path d="M560 640H480V656H560V640Z" fill="white"/>
+<path d="M576 624H464V640H576V624Z" fill="white"/>
+<path d="M592 608H448V624H592V608Z" fill="white"/>
+<rect x="416" y="480" width="96" height="96" fill="#FF0E0E"/>
+<rect x="528" y="480" width="96" height="96" fill="#FF0E0E"/>
+<rect x="368" y="512" width="48" height="16" fill="#FF0E0E"/>
+<rect x="512" y="512" width="16" height="16" fill="#FF0E0E"/>
+<rect x="368" y="528" width="16" height="32" fill="#FF0E0E"/>
+<rect x="432" y="496" width="32" height="64" fill="white"/>
+<rect x="464" y="496" width="32" height="64" fill="black"/>
+<rect x="544" y="496" width="32" height="64" fill="white"/>
+<rect x="576" y="496" width="32" height="64" fill="black"/>
+</svg>

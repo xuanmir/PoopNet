@@ -84,9 +84,9 @@ struct ContentView: View {
                 Spacer()
             }
             .padding()
-                .tabItem {
-                    Label("Home", systemImage: "house")
-                }
+            .tabItem {
+                Label("Home", systemImage: "house")
+            }
             
             Text("Population")
                 .tabItem {
