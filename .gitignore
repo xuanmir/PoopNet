@@ -1,4 +1,23 @@
+# macOS
 .DS_Store
-xcuserdata
+.env
+*.icloud
+
+# Large media files
+*.mkv
+*.mov
+*.mp4
+
+# Xcode
+
+## User settings
+xcuserdata/
 xcuserdata/*
 *.xcuserstate
+
+## App packaging
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+.build/
