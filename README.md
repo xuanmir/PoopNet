@@ -1,5 +1,4 @@
 # PoopNet
-Public toilet network to analyze the gut microbiome and transform feces into biogas or fertilizer.
 Public toilet network to analyze the gut microbiome and transform feces into energy and fertilizer.
 
 ## ToDo
