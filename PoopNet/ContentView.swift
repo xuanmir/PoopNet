@@ -30,25 +30,35 @@ struct ContentView: View {
                     Label("Calendar", systemImage: "calendar")
                 }
             
-//            Text("Search")
-//                .tabItem {
-//                    Label("Search", systemImage: "magnifyingglass")
-//                }
+            Text("Search")
+                .tabItem {
+                    Label("Search", systemImage: "magnifyingglass")
+                }
             
-//            Text("Notifications")
-//                .tabItem {
-//                    Label("Notifications", systemImage: "bell")
-//                }
+            Text("Notifications")
+                .tabItem {
+                    Label("Notifications", systemImage: "bell")
+                }
             
-//            Text("Profile")
-//                .tabItem {
-//                    Label("Profile", systemImage: "person.circle")
-//                }
+            Text("Profile")
+                .tabItem {
+                    Label("Profile", systemImage: "person.circle")
+                }
             
             Text("Settings")
                 .tabItem {
                     Label("Settings", systemImage: "gearshape")
                 }
+            
+//            Text("Sharing")
+//                .tabItem {
+//                    Label("Sharing", systemImage: "gearshape")
+//                }
+//            
+//            Text("Data Streams")
+//                .tabItem {
+//                    Label("Data Streams", systemImage: "gearshape")
+//                }
         }
     }
 }
