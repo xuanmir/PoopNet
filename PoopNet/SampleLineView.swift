@@ -11,7 +11,7 @@ struct SampleLineView: View {
     let isoDateString: String
     let location: String
     let status: SampleStatus
-    @State var withStroke: Bool
+    @State var withStroke: Bool = false
     
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     @State var tick = true
@@ -136,15 +136,10 @@ struct SampleStatusIndicator2: View {
 }
 
 #Preview {
-    VStack {
-        SampleLineView(isoDateString: Date.now.formatted(.iso8601), location: "PoopNet", status: .waitingForPickup, withStroke: false)
-        
-        SampleLineView(isoDateString: Date.now.formatted(.iso8601), location: "PoopNet", status: .inTransit, withStroke: false)
-        
-        SampleLineView(isoDateString: Date.now.formatted(.iso8601), location: "PoopNet", status: .sequencing, withStroke: false)
-        
-        SampleLineView(isoDateString: Date.now.formatted(.iso8601), location: "PoopNet", status: .rawDataOnchained, withStroke: false)
-        
-        SampleLineView(isoDateString: Date.now.formatted(.iso8601), location: "PoopNet", status: .opinionReceived, withStroke: false)
+    ScrollView {
+        ForEach(Sample.examples) { sample in
+            SampleLineView(isoDateString: sample.date, location: sample.location, status: sample.status, withStroke: sample.withStroke)
+        }
     }
+    .scrollIndicators(.hidden)
 }

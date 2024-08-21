@@ -7,10 +7,10 @@
 
 import SwiftUI
 
-struct SamplesView: View {    
+struct SamplesView: View {
     var body: some View {
         ScrollView {
-            ForEach(samples) { sample in
+            ForEach(Sample.examples) { sample in
                 SampleLineView(isoDateString: sample.date, location: sample.location, status: sample.status, withStroke: sample.withStroke)
             }
         }

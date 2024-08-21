@@ -243,59 +243,88 @@ func swiftDateToPrettyDateString(_ date: Date) -> String {
 //    // more code to come
 //}
 
-struct SimpleSample: Identifiable {
+struct Sample: Identifiable {
     let id = UUID()
     let date: String
     let location: String
     let status: SampleStatus
-    let withStroke: Bool
+    var withStroke: Bool = false
     
-    var formattedDate: String {
-        isoDateStringToPrettyDateString(date)
-    }
+    static let examples: [Sample] = [
+        Sample(
+            date: Date().formatted(.iso8601),
+            location: "16 rue Daval",
+            status: .waitingForPickup
+        ),
+//        Sample(
+//            date: "2024-03-02T14:00:00+0100",
+//            location: "16 rue Daval",
+//            status: .waitingForPickup
+//        ),
+//        Sample(
+//            date: "2024-03-02T03:44:21+0100",
+//            location: "16 rue Daval",
+//            status: .waitingForPickup
+//        ),
+        Sample(
+            date: "2024-03-01T19:20:11+0100",
+            location: "16 rue Daval",
+            status: .inTransit,
+            withStroke: true
+        ),
+        Sample(
+            date: "2024-01-08T23:44:58+0100",
+            location: "Montigny Le Bretonneux",
+            status: .sequencing
+        ),
+        Sample(
+            date: "2023-07-21T19:40:15+0200",
+            location: "Palais Brongniart",
+            status: .rawDataOnchained
+        ),
+        Sample(
+            date: "2023-07-20T18:03:00+0200",
+            location: "Palais Brongniart",
+            status: .opinionReceived
+        )
+    ]
 }
 
-let samples: [SimpleSample] = [
-    SimpleSample(
-        date: Date().formatted(.iso8601),
-        location: "16 rue Daval",
-        status: .waitingForPickup,
-        withStroke: false
-    ),
-    SimpleSample(
-        date: "2024-03-02T14:00:00+0100",
-        location: "16 rue Daval",
-        status: .waitingForPickup,
-        withStroke: false
-    ),
-    SimpleSample(
-        date: "2024-03-02T03:44:21+0100",
-        location: "16 rue Daval",
-        status: .waitingForPickup,
-        withStroke: false
-    ),
-    SimpleSample(
-        date: "2024-03-01T19:20:11+0100",
-        location: "16 rue Daval",
-        status: .inTransit,
-        withStroke: false
-    ),
-    SimpleSample(
-        date: "2024-01-08T23:44:58+0100",
-        location: "Montigny Le Bretonneux",
-        status: .sequencing,
-        withStroke: false
-    ),
-    SimpleSample(
-        date: "2023-07-21T19:40:15+0200",
-        location: "Palais Brongniart",
-        status: .rawDataOnchained,
-        withStroke: false
-    ),
-    SimpleSample(
-        date: "2023-07-20T18:03:00+0200",
-        location: "Palais Brongniart",
-        status: .opinionReceived,
-        withStroke: false
-    )
-]
+//let samples: [Sample] = [
+//    Sample(
+//        date: Date().formatted(.iso8601),
+//        location: "16 rue Daval",
+//        status: .waitingForPickup,
+//        withStroke: true
+//    ),
+//    Sample(
+//        date: "2024-03-02T14:00:00+0100",
+//        location: "16 rue Daval",
+//        status: .waitingForPickup
+//    ),
+//    Sample(
+//        date: "2024-03-02T03:44:21+0100",
+//        location: "16 rue Daval",
+//        status: .waitingForPickup
+//    ),
+//    Sample(
+//        date: "2024-03-01T19:20:11+0100",
+//        location: "16 rue Daval",
+//        status: .inTransit
+//    ),
+//    Sample(
+//        date: "2024-01-08T23:44:58+0100",
+//        location: "Montigny Le Bretonneux",
+//        status: .sequencing
+//    ),
+//    Sample(
+//        date: "2023-07-21T19:40:15+0200",
+//        location: "Palais Brongniart",
+//        status: .rawDataOnchained
+//    ),
+//    Sample(
+//        date: "2023-07-20T18:03:00+0200",
+//        location: "Palais Brongniart",
+//        status: .opinionReceived
+//    )
+//]
