@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		870EC7652B0F464C00442BC7 /* SamplesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870EC7642B0F464C00442BC7 /* SamplesView.swift */; };
+		873D806F2C7D525C005D0BE0 /* DateAndTimeFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873D806E2C7D525C005D0BE0 /* DateAndTimeFunctions.swift */; };
 		87A2C8CF2A6CB90C004A0FBF /* PoopNetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A2C8CE2A6CB90C004A0FBF /* PoopNetApp.swift */; };
 		87A2C8D12A6CB90C004A0FBF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A2C8D02A6CB90C004A0FBF /* ContentView.swift */; };
 		87A2C8D32A6CB90E004A0FBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87A2C8D22A6CB90E004A0FBF /* Assets.xcassets */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		870EC7642B0F464C00442BC7 /* SamplesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SamplesView.swift; sourceTree = "<group>"; };
+		873D806E2C7D525C005D0BE0 /* DateAndTimeFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateAndTimeFunctions.swift; sourceTree = "<group>"; };
 		87A2C8CB2A6CB90C004A0FBF /* PoopNet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PoopNet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87A2C8CE2A6CB90C004A0FBF /* PoopNetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoopNetApp.swift; sourceTree = "<group>"; };
 		87A2C8D02A6CB90C004A0FBF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 				87AA10FE2B5505DA001FFD10 /* SampleLineView.swift */,
 				87EF46F42B8EDD7000F3959F /* Participant.swift */,
 				87EA040E2B5485A500EF6A91 /* Sample.swift */,
+				873D806E2C7D525C005D0BE0 /* DateAndTimeFunctions.swift */,
 				87A2C8D22A6CB90E004A0FBF /* Assets.xcassets */,
 				87A2C8D42A6CB90E004A0FBF /* Preview Content */,
 			);
@@ -159,6 +162,7 @@
 				87AA10FF2B5505DA001FFD10 /* SampleLineView.swift in Sources */,
 				87EA040F2B5485A500EF6A91 /* Sample.swift in Sources */,
 				87EF46F52B8EDD7000F3959F /* Participant.swift in Sources */,
+				873D806F2C7D525C005D0BE0 /* DateAndTimeFunctions.swift in Sources */,
 				870EC7652B0F464C00442BC7 /* SamplesView.swift in Sources */,
 				87A2C8CF2A6CB90C004A0FBF /* PoopNetApp.swift in Sources */,
 			);

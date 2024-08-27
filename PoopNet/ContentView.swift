@@ -10,56 +10,66 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         TabView {
-            SamplesView()
-                .tabItem {
-                    Label("Samples", systemImage: "list.bullet")
-                }
+            TabItemView(title: "Samples", icon: "list.bullet") {
+                SamplesView()
+            }
             
-            Text("Gut Microbiome Population")
-                .tabItem {
-                    Label("Population", systemImage: "chart.xyaxis.line")
-                }
+            TabItemView(title: "Population", icon: "chart.xyaxis.line") {
+                Text("Gut Microbiome Population")
+            }
             
-            Text("Scan Container QR Code")
-                .tabItem {
-                    Label("Scan", systemImage: "qrcode.viewfinder")
-                }
+            TabItemView(title: "Scan", icon: "qrcode.viewfinder") {
+                Text("Scan Container QR Code")
+            }
             
-            Text("Calendar")
-                .tabItem {
-                    Label("Calendar", systemImage: "calendar")
-                }
+            TabItemView(title: "Calendar", icon: "calendar") {
+                Text("Calendar")
+            }
             
-            Text("Search")
-                .tabItem {
-                    Label("Search", systemImage: "magnifyingglass")
-                }
+            TabItemView(title: "Search", icon: "magnifyingglass") {
+                Text("Search")
+            }
             
-            Text("Notifications")
-                .tabItem {
-                    Label("Notifications", systemImage: "bell")
-                }
+            TabItemView(title: "Notifications", icon: "bell") {
+                Text("Notifications")
+            }
             
-            Text("Profile")
-                .tabItem {
-                    Label("Profile", systemImage: "person.circle")
-                }
+            TabItemView(title: "Profile", icon: "person") {
+                Text("Profile")
+            }
             
-            Text("Settings")
-                .tabItem {
-                    Label("Settings", systemImage: "gearshape")
-                }
+            TabItemView(title: "Settings", icon: "gearshape") {
+                Text("Settings")
+            }
             
-//            Text("Sharing")
-//                .tabItem {
-//                    Label("Sharing", systemImage: "gearshape")
-//                }
-//            
-//            Text("Data Streams")
-//                .tabItem {
-//                    Label("Data Streams", systemImage: "gearshape")
-//                }
+            TabItemView(title: "Data Streams", icon: "questionmark.square") {
+                Text("Data Streams")
+            }
+            
+            TabItemView(title: "Sharing", icon: "questionmark.square") {
+                Text("Sharing")
+            }
         }
+    }
+}
+
+struct TabItemView<Content: View>: View {
+    // Should we rename title to text and icon to symbol ???
+    let title: String
+    let icon: String
+    let content: Content
+    
+    init(title: String, icon: String, @ViewBuilder content: () -> Content) {
+        self.title = title
+        self.icon = icon
+        self.content = content()
+    }
+    
+    var body: some View {
+        content
+            .tabItem {
+                Label(title, systemImage: icon)
+            }
     }
 }
 

@@ -11,17 +11,19 @@ struct SampleLineView: View {
     let isoDateString: String
     let location: String
     let status: SampleStatus
-    @State var withStroke: Bool = false
+    @State var isSelected: Bool = false
     
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
-    @State var tick = true
+    @State private var tick = true
+    
+    var prettyDateString: String {
+        isoDateStringToPrettyDateString(isoDateString)
+    }
     
     var body: some View {
-        let formattedDate = isoDateStringToPrettyDateString(isoDateString)
-        
         VStack {
             SampleStatusIndicator(status: status)
-            Text(formattedDate)
+            Text(prettyDateString)
                 .font(.title2.bold())
                 .frame(maxWidth: .infinity, alignment: .leading)
             Text(location)
@@ -34,10 +36,10 @@ struct SampleLineView: View {
         .clipShape(RoundedRectangle(cornerRadius: 24))
         .overlay(
             RoundedRectangle(cornerRadius: 24)
-                .stroke(status.color.opacity(withStroke ? 40 : 0))
+                .stroke(status.color.opacity(isSelected ? 1 : 0))
         )
         .onTapGesture {
-            withStroke.toggle()
+            isSelected.toggle()
         }
         .padding(.horizontal, 16)
         .padding(.vertical, 2)
@@ -121,7 +123,7 @@ struct SampleStatusIndicator: View {
     }
 }
 
-struct SampleStatusIndicator2: View {
+struct SampleStatusIndicatorBasic: View {
     let status: SampleStatus
     
     var body: some View {
@@ -138,7 +140,7 @@ struct SampleStatusIndicator2: View {
 #Preview {
     ScrollView {
         ForEach(Sample.examples) { sample in
-            SampleLineView(isoDateString: sample.date, location: sample.location, status: sample.status, withStroke: sample.withStroke)
+            SampleLineView(isoDateString: sample.date, location: sample.location, status: sample.status, isSelected: sample.isSelected)
         }
     }
     .scrollIndicators(.hidden)
