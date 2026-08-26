@@ -22,10 +22,6 @@ struct ContentView: View {
                 Text("Scan Container QR Code")
             }
             
-            TabItemView(title: "Calendar", icon: "calendar") {
-                Text("Calendar")
-            }
-            
             TabItemView(title: "Search", icon: "magnifyingglass") {
                 Text("Search")
             }
@@ -40,6 +36,10 @@ struct ContentView: View {
             
             TabItemView(title: "Settings", icon: "gearshape") {
                 Text("Settings")
+            }
+            
+            TabItemView(title: "Calendar", icon: "calendar") {
+                Text("Calendar")
             }
             
             TabItemView(title: "Data Streams", icon: "questionmark.square") {

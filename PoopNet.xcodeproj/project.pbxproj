@@ -14,6 +14,7 @@
 		87A2C8D32A6CB90E004A0FBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87A2C8D22A6CB90E004A0FBF /* Assets.xcassets */; };
 		87A2C8D62A6CB90E004A0FBF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87A2C8D52A6CB90E004A0FBF /* Preview Assets.xcassets */; };
 		87AA10FF2B5505DA001FFD10 /* SampleLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87AA10FE2B5505DA001FFD10 /* SampleLineView.swift */; };
+		87CE15EB2C7F728D0020CC27 /* SampleLineCompactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CE15EA2C7F728D0020CC27 /* SampleLineCompactView.swift */; };
 		87EA040F2B5485A500EF6A91 /* Sample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EA040E2B5485A500EF6A91 /* Sample.swift */; };
 		87EF46F52B8EDD7000F3959F /* Participant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EF46F42B8EDD7000F3959F /* Participant.swift */; };
 		87EF46F72B8EDE4000F3959F /* ParticipantTagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EF46F62B8EDE4000F3959F /* ParticipantTagView.swift */; };
@@ -28,6 +29,7 @@
 		87A2C8D22A6CB90E004A0FBF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		87A2C8D52A6CB90E004A0FBF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		87AA10FE2B5505DA001FFD10 /* SampleLineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleLineView.swift; sourceTree = "<group>"; };
+		87CE15EA2C7F728D0020CC27 /* SampleLineCompactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleLineCompactView.swift; sourceTree = "<group>"; };
 		87DE8B952ABCD9100025788F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		87EA040E2B5485A500EF6A91 /* Sample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample.swift; sourceTree = "<group>"; };
 		87EF46F42B8EDD7000F3959F /* Participant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Participant.swift; sourceTree = "<group>"; };
@@ -45,6 +47,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8740031A2D23572300E6BF0E /* Archive */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Archive;
+			sourceTree = "<group>";
+		};
 		87A2C8C22A6CB90C004A0FBF = {
 			isa = PBXGroup;
 			children = (
@@ -65,15 +74,17 @@
 		87A2C8CD2A6CB90C004A0FBF /* PoopNet */ = {
 			isa = PBXGroup;
 			children = (
-				87A2C8CE2A6CB90C004A0FBF /* PoopNetApp.swift */,
-				87A2C8D02A6CB90C004A0FBF /* ContentView.swift */,
-				87EF46F62B8EDE4000F3959F /* ParticipantTagView.swift */,
-				870EC7642B0F464C00442BC7 /* SamplesView.swift */,
-				87AA10FE2B5505DA001FFD10 /* SampleLineView.swift */,
-				87EF46F42B8EDD7000F3959F /* Participant.swift */,
-				87EA040E2B5485A500EF6A91 /* Sample.swift */,
-				873D806E2C7D525C005D0BE0 /* DateAndTimeFunctions.swift */,
+				8740031A2D23572300E6BF0E /* Archive */,
 				87A2C8D22A6CB90E004A0FBF /* Assets.xcassets */,
+				87A2C8D02A6CB90C004A0FBF /* ContentView.swift */,
+				873D806E2C7D525C005D0BE0 /* DateAndTimeFunctions.swift */,
+				87EF46F42B8EDD7000F3959F /* Participant.swift */,
+				87EF46F62B8EDE4000F3959F /* ParticipantTagView.swift */,
+				87A2C8CE2A6CB90C004A0FBF /* PoopNetApp.swift */,
+				87EA040E2B5485A500EF6A91 /* Sample.swift */,
+				87CE15EA2C7F728D0020CC27 /* SampleLineCompactView.swift */,
+				87AA10FE2B5505DA001FFD10 /* SampleLineView.swift */,
+				870EC7642B0F464C00442BC7 /* SamplesView.swift */,
 				87A2C8D42A6CB90E004A0FBF /* Preview Content */,
 			);
 			path = PoopNet;
@@ -115,7 +126,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1500;
-				LastUpgradeCheck = 1500;
+				LastUpgradeCheck = 2660;
 				TargetAttributes = {
 					87A2C8CA2A6CB90C004A0FBF = {
 						CreatedOnToolsVersion = 15.0;
@@ -163,6 +174,7 @@
 				87EA040F2B5485A500EF6A91 /* Sample.swift in Sources */,
 				87EF46F52B8EDD7000F3959F /* Participant.swift in Sources */,
 				873D806F2C7D525C005D0BE0 /* DateAndTimeFunctions.swift in Sources */,
+				87CE15EB2C7F728D0020CC27 /* SampleLineCompactView.swift in Sources */,
 				870EC7652B0F464C00442BC7 /* SamplesView.swift in Sources */,
 				87A2C8CF2A6CB90C004A0FBF /* PoopNetApp.swift in Sources */,
 			);
@@ -206,6 +218,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = FT463DHC3J;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -229,6 +242,7 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -269,6 +283,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = FT463DHC3J;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -285,6 +300,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -298,9 +314,9 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"PoopNet/Preview Content\"";
-				DEVELOPMENT_TEAM = FT463DHC3J;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = PoopNet;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -327,9 +343,9 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"PoopNet/Preview Content\"";
-				DEVELOPMENT_TEAM = FT463DHC3J;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = PoopNet;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

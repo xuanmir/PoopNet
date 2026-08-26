@@ -9,52 +9,50 @@ import SwiftUI
 
 struct SamplesView: View {
     var body: some View {
-        ScrollView {
-            ForEach(Sample.examples) { sample in
-                SampleLineView(
-                    isoDateString: sample.date,
-                    location: sample.location,
-                    status: sample.status,
-                    isSelected: sample.isSelected
-                )
+        NavigationStack {
+            ScrollView {
+                ForEach(Sample.examples) { sample in
+                    SampleLineCompactView(
+                        date: sample.date,
+                        location: sample.location,
+                        status: sample.status,
+                        isSelected: sample.isSelected
+                    )
+                }
                 
-                SampleLineFullBottomView(
-                    isoDateString: sample.date,
-                    location: sample.location,
-                    status: sample.status,
-                    isSelected: sample.isSelected
-                )
-                
-                SampleLineCompactLeftView(
-                    isoDateString: sample.date,
-                    location: sample.location,
-                    status: sample.status,
-                    isSelected: sample.isSelected
-                )
-                
-                SampleLineCompactRightView(
-                    isoDateString: sample.date,
-                    location: sample.location,
-                    status: sample.status,
-                    isSelected: sample.isSelected
-                )
-                
-                SampleLineFullCenteredView(
-                    isoDateString: sample.date,
-                    location: sample.location,
-                    status: sample.status,
-                    isSelected: sample.isSelected
-                )
-                
-                SampleLineBasicCenteredView(
-                    isoDateString: sample.date,
-                    location: sample.location,
-                    status: sample.status,
-                    isSelected: sample.isSelected
-                )
+//                ForEach(Sample.examples) { sample in
+//                    SampleLineView(
+//                        date: sample.date,
+//                        location: sample.location,
+//                        status: sample.status,
+//                        isSelected: sample.isSelected
+//                    )
+//    
+//                    SampleLineFullBottomView(
+//                        date: sample.date,
+//                        location: sample.location,
+//                        status: sample.status,
+//                        isSelected: sample.isSelected
+//                    )
+//    
+//                    SampleLineFullCenteredView(
+//                        date: sample.date,
+//                        location: sample.location,
+//                        status: sample.status,
+//                        isSelected: sample.isSelected
+//                    )
+//    
+//                    SampleLineBasicCenteredView(
+//                        date: sample.date,
+//                        location: sample.location,
+//                        status: sample.status,
+//                        isSelected: sample.isSelected
+//                    )
+//                }
             }
+            .navigationTitle("Samples")
+            .scrollIndicators(.hidden)
         }
-        .scrollIndicators(.hidden)
     }
 }
 
